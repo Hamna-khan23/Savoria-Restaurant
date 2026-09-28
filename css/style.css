@@ -1,0 +1,645 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.custom-navbar {
+    background: #2B1D16 !important;
+    padding: 14px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.brand-icon {
+    color: #D6A15D;
+    margin-right: 8px;
+}
+
+.custom-navbar .navbar-nav {
+    gap: 8px;
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #D6A15D !important;
+}
+
+.custom-navbar .nav-link.active {
+    color: #D6A15D !important;
+}
+
+
+/* Reserve Button */
+
+.reserve-btn {
+    background: #D6A15D;
+    color: #2B1D16 !important;
+    border: 2px solid #D6A15D;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: transparent;
+    color: #D6A15D !important;
+    border-color: #D6A15D;
+}
+
+
+/* Mobile Toggle */
+
+.custom-navbar .navbar-toggler {
+    border: 1px solid #D6A15D;
+    padding: 7px 10px;
+}
+
+.custom-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(214, 161, 93, 0.25);
+}
+
+
+/* =========================================
+   HERO SECTION - HOME
+========================================= */
+
+.hero-section {
+    min-height: 85vh;
+
+    background:
+        linear-gradient(
+            rgba(43, 29, 22, 0.72),
+            rgba(214, 161, 93, 0.30)
+        ),
+        url("../images/hero.jpg") center center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-section h1 {
+    max-width: 750px;
+    line-height: 1.1;
+}
+
+.hero-section h1 span {
+    color: #D6A15D;
+}
+
+.hero-section p {
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.hero-subtitle {
+    color: #E0B06B;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   GENERAL BUTTONS
+========================================= */
+
+.btn {
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn-dark {
+    background-color: #222;
+    border-color: #222;
+}
+
+.btn-dark:hover {
+    background-color: #8B5E3C;
+    border-color: #8B5E3C;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+section span.text-uppercase {
+    color: #8B5E3C;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   HOME - ABOUT / INTRODUCTION
+========================================= */
+
+section img {
+    object-fit: cover;
+}
+
+.rounded-4 {
+    border-radius: 20px !important;
+}
+
+
+/* =========================================
+   HOME - FOOD CARDS
+========================================= */
+
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #ffffff;
+}
+
+.card-title {
+    color: #222;
+}
+
+.card-text {
+    line-height: 1.7;
+}
+
+.card .bi-star-fill {
+    color: #D6A15D;
+    margin-right: 4px;
+}
+
+
+/* =========================================
+   HOME - WHY CHOOSE US
+========================================= */
+
+.py-5 .bi {
+    color: #8B5E3C;
+}
+
+.py-5 .p-4 {
+    transition: transform 0.3s ease;
+}
+
+.py-5 .p-4:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   HOME - CTA
+========================================= */
+
+.cta {
+    background: #2B1D16;
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page-header {
+    background: #2B1D16;
+    padding: 90px 20px;
+    color: #ffffff;
+}
+
+.about-page-header h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.about-page-header h1 span {
+    color: #D6A15D;
+}
+
+.about-page-header p {
+    color: #ddd;
+    max-width: 650px;
+    margin: auto;
+    font-size: 1.05rem;
+}
+
+
+/* About Section */
+
+.about-section {
+    background: #fffaf5;
+}
+
+.about-image-wrapper {
+    position: relative;
+}
+
+.about-main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.experience-badge {
+    position: absolute;
+    right: -20px;
+    bottom: 25px;
+    background: #D6A15D;
+    color: #2B1D16;
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.experience-badge strong {
+    font-size: 2rem;
+}
+
+.experience-badge span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.about-title {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #2B1D16;
+    margin: 12px 0 20px;
+}
+
+.about-title span {
+    color: #D6A15D;
+}
+
+.about-text {
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #2B1D16;
+}
+
+.about-feature i {
+    color: #D6A15D;
+    font-size: 1.2rem;
+}
+
+.about-btn {
+    margin-top: 15px;
+    background: #2B1D16;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #D6A15D;
+    color: #2B1D16;
+}
+
+
+/* =========================================
+   ABOUT - VALUES
+========================================= */
+
+.values-section {
+    background: #ffffff;
+}
+
+.section-subtitle {
+    color: #D6A15D;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    color: #2B1D16;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.section-title span {
+    color: #D6A15D;
+}
+
+.section-description {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #777;
+}
+
+.value-card {
+    background: #fffaf5;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 15px;
+    height: 100%;
+    border: 1px solid #eee2d7;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(43, 29, 22, 0.12);
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #2B1D16;
+    color: #D6A15D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.value-card h4 {
+    color: #2B1D16;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   ABOUT - CTA
+========================================= */
+
+.about-cta {
+    background: #2B1D16;
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+.about-cta h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.about-cta p {
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+/* =========================================
+   RESPONSIVE - NAVBAR
+========================================= */
+
+@media (max-width: 991px) {
+
+    .custom-navbar .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 10px 14px !important;
+    }
+
+    .navbar-button {
+        margin-top: 12px;
+    }
+
+    .reserve-btn {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - HOME
+========================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: 75vh;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hero-section {
+        min-height: 80vh;
+        text-align: center;
+    }
+
+    .hero-section .container {
+        padding: 30px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn {
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - ABOUT
+========================================= */
+
+@media (max-width: 991px) {
+
+    .about-page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-main-image {
+        height: 400px;
+    }
+
+    .experience-badge {
+        right: 15px;
+    }
+
+    .about-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about-page-header {
+        padding: 65px 15px;
+    }
+
+    .about-page-header h1 {
+        font-size: 2.1rem;
+    }
+
+    .about-main-image {
+        height: 300px;
+    }
+
+    .experience-badge {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: -30px;
+        margin-left: 20px;
+        width: fit-content;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-cta h2 {
+        font-size: 2rem;
+    }
+}
+
+
+.footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 60px 0 25px;
+}
+
+.footer h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer h4 i {
+    color: #D6A15D;
+    margin-right: 8px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #D6A15D !important;
+}
+
+.footer i {
+    color: #D6A15D;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+    margin: 30px 0 20px;
+}

@@ -1,0 +1,476 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.custom-navbar {
+    background: #2B1D16 !important;
+    padding: 14px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.brand-icon {
+    color: #D6A15D;
+    margin-right: 8px;
+}
+
+.custom-navbar .navbar-nav {
+    gap: 8px;
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #D6A15D !important;
+}
+
+.custom-navbar .nav-link.active {
+    color: #D6A15D !important;
+}
+
+
+/* Reserve Button */
+
+.reserve-btn {
+    background: #D6A15D;
+    color: #2B1D16 !important;
+    border: 2px solid #D6A15D;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: transparent;
+    color: #D6A15D !important;
+    border-color: #D6A15D;
+}
+
+
+/* Mobile Toggle */
+
+.custom-navbar .navbar-toggler {
+    border: 1px solid #D6A15D;
+    padding: 7px 10px;
+}
+
+.custom-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(214, 161, 93, 0.25);
+}
+
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page-header {
+    background: #2B1D16;
+    padding: 90px 20px;
+    color: #ffffff;
+}
+
+.contact-page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.contact-page-header h1 span {
+    color: #D6A15D;
+}
+
+.contact-page-header p {
+    color: #ddd;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    background: #fffaf5;
+}
+
+
+/* Contact Info */
+
+.contact-info-card {
+    background: #ffffff;
+    border: 1px solid #eee2d7;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(43, 29, 22, 0.10);
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #2B1D16;
+    color: #D6A15D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.contact-info-card h4 {
+    color: #2B1D16;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.contact-info-card p {
+    color: #777;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* Contact Form */
+
+.contact-form-card {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 15px;
+    border: 1px solid #eee2d7;
+    height: 100%;
+}
+
+.contact-form-card h2 {
+    color: #2B1D16;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.contact-form-card h2 span {
+    color: #D6A15D;
+}
+
+.contact-form-intro {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.contact-form-card .form-label {
+    color: #2B1D16;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-form-card .form-control {
+    border: 1px solid #ddd0c4;
+    border-radius: 8px;
+    padding: 12px 15px;
+    background: #fffaf5;
+}
+
+.contact-form-card .form-control:focus {
+    border-color: #D6A15D;
+    box-shadow: 0 0 0 3px rgba(214, 161, 93, 0.15);
+    background: #ffffff;
+}
+
+.contact-submit {
+    background: #2B1D16;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid #2B1D16;
+    transition: all 0.3s ease;
+}
+
+.contact-submit:hover {
+    background: #D6A15D;
+    border-color: #D6A15D;
+    color: #2B1D16;
+}
+
+#formMessage {
+    margin-top: 20px;
+}
+
+
+/* Reservation Card */
+
+.reservation-card {
+    background: #2B1D16;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 45px 35px;
+    height: 100%;
+}
+
+.reservation-card h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.reservation-card h2 span {
+    color: #D6A15D;
+}
+
+.reservation-card > p {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.reservation-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.reservation-detail > i {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: #D6A15D;
+    color: #2B1D16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-detail strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.reservation-detail span {
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.reservation-call-btn {
+    margin-top: 10px;
+    width: 100%;
+    background: #D6A15D;
+    color: #2B1D16;
+    border: 2px solid #D6A15D;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.reservation-call-btn:hover {
+    background: transparent;
+    color: #D6A15D;
+}
+
+
+/* Location */
+
+.location-section {
+    background: #2B1D16;
+}
+
+.location-placeholder {
+    min-height: 380px;
+
+    background:
+        linear-gradient(
+            rgba(43, 29, 22, 0.90),
+            rgba(43, 29, 22, 0.90)
+        ),
+        url("../images/hero.jpg") center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.location-content {
+    color: #ffffff;
+}
+
+.location-content > i {
+    font-size: 3rem;
+    color: #D6A15D;
+}
+
+.location-content h3 {
+    font-size: 2rem;
+    margin: 15px 0 8px;
+}
+
+.location-content p {
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.location-btn {
+    background: #D6A15D;
+    color: #2B1D16;
+    border: 2px solid #D6A15D;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-weight: 600;
+}
+
+.location-btn:hover {
+    background: transparent;
+    color: #D6A15D;
+}
+
+
+
+
+.footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 60px 0 25px;
+}
+
+.footer h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer h4 i {
+    color: #D6A15D;
+    margin-right: 8px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #D6A15D !important;
+}
+
+.footer i {
+    color: #D6A15D;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+    margin: 30px 0 20px;
+}
+
+
+
+/* =========================================
+   RESPONSIVE - NAVBAR
+========================================= */
+
+@media (max-width: 991px) {
+
+    .custom-navbar .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 10px 14px !important;
+    }
+
+    .navbar-button {
+        margin-top: 12px;
+    }
+
+    .reserve-btn {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - CONTACT
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-page-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+
+    .reservation-card {
+        padding: 35px 25px;
+    }
+
+    .location-placeholder {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .contact-page-header {
+        padding: 65px 15px;
+    }
+
+    .contact-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form-card h2,
+    .reservation-card h2 {
+        font-size: 2rem;
+    }
+}

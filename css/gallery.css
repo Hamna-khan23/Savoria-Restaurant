@@ -1,0 +1,375 @@
+/* =========================================
+   GALLERY PAGE
+========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.custom-navbar {
+    background: #2B1D16 !important;
+    padding: 14px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.brand-icon {
+    color: #D6A15D;
+    margin-right: 8px;
+}
+
+.custom-navbar .navbar-nav {
+    gap: 8px;
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #D6A15D !important;
+}
+
+.custom-navbar .nav-link.active {
+    color: #D6A15D !important;
+}
+
+
+/* Reserve Button */
+
+.reserve-btn {
+    background: #D6A15D;
+    color: #2B1D16 !important;
+    border: 2px solid #D6A15D;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: transparent;
+    color: #D6A15D !important;
+    border-color: #D6A15D;
+}
+
+
+/* Mobile Toggle */
+
+.custom-navbar .navbar-toggler {
+    border: 1px solid #D6A15D;
+    padding: 7px 10px;
+}
+
+.custom-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(214, 161, 93, 0.25);
+}
+
+
+.gallery-page-header {
+    background: #2B1D16;
+    padding: 90px 20px;
+    color: #ffffff;
+}
+
+.gallery-page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.gallery-page-header h1 span {
+    color: #D6A15D;
+}
+
+.gallery-page-header p {
+    color: #ddd;
+    max-width: 650px;
+    margin: auto;
+}
+
+.gallery-section {
+    background: #fffaf5;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 320px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(43, 29, 22, 0.10);
+}
+
+.gallery-large {
+    height: 380px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* Gallery Overlay */
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(43, 29, 22, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay i {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    border: 1px solid #D6A15D;
+    border-radius: 50%;
+    color: #D6A15D;
+    font-size: 1.3rem;
+}
+
+.gallery-overlay h5 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.gallery-overlay span {
+    color: #D6A15D;
+    font-size: 0.9rem;
+}
+
+
+/* Gallery Experience */
+
+.gallery-experience {
+    background: #ffffff;
+    padding: 90px 20px;
+}
+
+.gallery-experience h2 {
+    color: #2B1D16;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 15px 0 20px;
+}
+
+.gallery-experience h2 span {
+    color: #D6A15D;
+}
+
+.gallery-experience p {
+    color: #777;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.experience-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.experience-stat {
+    background: #fffaf5;
+    border: 1px solid #eee2d7;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.experience-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(43, 29, 22, 0.10);
+}
+
+.experience-stat strong {
+    display: block;
+    color: #D6A15D;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.experience-stat span {
+    color: #2B1D16;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+/* Gallery CTA */
+
+.gallery-cta {
+    background: #2B1D16;
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+.gallery-cta h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.gallery-cta p {
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 60px 0 25px;
+}
+
+.footer h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer h4 i {
+    color: #D6A15D;
+    margin-right: 8px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #D6A15D !important;
+}
+
+.footer i {
+    color: #D6A15D;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+    margin: 30px 0 20px;
+}
+
+/* =========================================
+   RESPONSIVE - GALLERY
+========================================= */
+
+@media (max-width: 768px) {
+
+    .gallery-page-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .gallery-card,
+    .gallery-large {
+        height: 300px;
+    }
+
+    .gallery-experience h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .gallery-page-header {
+        padding: 65px 15px;
+    }
+
+    .gallery-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-card,
+    .gallery-large {
+        height: 260px;
+    }
+
+    .experience-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - NAVBAR
+========================================= */
+
+@media (max-width: 991px) {
+
+    .custom-navbar .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 10px 14px !important;
+    }
+
+    .navbar-button {
+        margin-top: 12px;
+    }
+
+    .reserve-btn {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
